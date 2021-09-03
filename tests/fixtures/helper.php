@@ -4,7 +4,8 @@ use App\Models\User;
 use Spatie\Permission\Models\Role;
 
 if (!function_exists('roleFixture')) {
-    function createRole() {
+    function createRole()
+    {
         foreach (['super_admin','book_keeper','publisher','user'] as $roles) {
             Role::create([
                 'name' => $roles,
@@ -14,7 +15,7 @@ if (!function_exists('roleFixture')) {
     }
 }
 
-if (!function_exists('assignRoleToUserFixture')){
+if (!function_exists('assignRoleToUserFixture')) {
     function assignRoleToUserFixture(string $roleName, bool $shouldAssignRole): array
     {
         $role = Role::create([

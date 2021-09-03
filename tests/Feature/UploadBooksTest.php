@@ -10,6 +10,7 @@ use Tests\TestCase;
 class UploadBooksTest extends TestCase
 {
     use RefreshDatabase;
+
     /**
      * @test
      */

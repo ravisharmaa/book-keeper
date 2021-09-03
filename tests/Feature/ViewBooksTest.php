@@ -15,7 +15,7 @@ class ViewBooksTest extends TestCase
     /**
      * @test
      */
-    public function guestCanNotViewABook()
+    public function guest_can_not_view_book()
     {
         $book = Book::factory()->create();
 
@@ -26,7 +26,7 @@ class ViewBooksTest extends TestCase
     /**
      * @test
      */
-    public function aUserCanViewABook()
+    public function a_user_can_view_book()
     {
         $user = User::factory()->create();
 
